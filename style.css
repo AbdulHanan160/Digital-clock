@@ -17,54 +17,55 @@ body {
     font-size: 2rem;
     margin-top: 1.5rem;
 }
-.container{
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80vh;
     gap: 10px;
 }
-.time{
-    border: 2px solid white;
+
+.time {
+
     height: 7rem;
     width: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-   
+    
+
 }
-.time p{
+.hours{
+    background: conic-gradient(red 0deg, red 0deg, white 0deg);
+    transition: all ease;
+}
+.minutes{
+    background: conic-gradient(rgb(244, 237, 13) 0deg, rgb(244, 237, 13) 0deg, white 0deg);
+    transition: all ease;
+}
+.seconds{
+    background: conic-gradient(rgb(51, 42, 231) 0deg, rgb(51, 42, 231) 0deg, white 0deg);
+    
+}
+
+
+.circle {
+    width: 6.7rem;
+    height: 6.7rem;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    
+}
+
+.clock {
     font-weight: bold;
+    z-index: 3;
+    position: absolute;
+  
 }
-.sessions{
+.sessions {
     position: absolute;
     right: 26rem;
-}
-.hours::before{
-    content: "";
-    width:8px;
-    height: 8px;
-    background-color: rgb(209, 21, 21);
-    border-radius: 50%;
-    position: absolute;
-    top: 40.5%;
-}
-.minutes::before{
-    content: "";
-    width:8px;
-    height: 8px;
-    background-color: rgb(213, 243, 14);
-    border-radius: 50%;
-    position: absolute;
-    top: 40.5%;
-}
-.seconds::before{
-    content: "";
-    width:8px;
-    height: 8px;
-    background-color: rgb(42, 39, 247);
-    border-radius: 50%;
-    position: absolute;
-    top: 40.5%;
 }
