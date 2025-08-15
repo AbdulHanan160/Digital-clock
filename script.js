@@ -7,6 +7,7 @@ let minutes =document.querySelector(".minutes")
 let seconds =document.querySelector(".seconds")
 const showtime = () => {
     let now = new Date
+    console.log(now)
     let h = now.getHours()
     let m = now.getMinutes()
     let s = now.getSeconds()
@@ -15,7 +16,11 @@ const showtime = () => {
     hour.innerHTML = h
     mins.innerHTML = m
     secs.innerHTML = s
+    if(h===0){
+        h=12
+    }
     if (h > 12) {
+        h= h-12
         session.innerHTML = "PM"
     }
     if (h < 10) {
