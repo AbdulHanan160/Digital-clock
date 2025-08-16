@@ -69,3 +69,9 @@ body {
     position: absolute;
     right: 26rem;
 }
+.date p{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+}

@@ -42,5 +42,21 @@ const showtime = () => {
     requestAnimationFrame(showtime)
 }
 
-showtime()
 
+
+const todaydate=()=>{
+    let today =new Date
+    const options = {
+        weekday: "short", 
+        month: "short",   
+        day: "numeric",  
+        year: "numeric"  
+      }
+      
+    let day =today.toLocaleDateString("en-US", options)
+    date.innerHTML=day
+    
+}
+
+showtime()
+todaydate()
